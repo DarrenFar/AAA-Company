@@ -1,0 +1,10 @@
+Bundle-Name: AAACustomerService-api
+Bundle-SymbolicName: com.liferay.docs.customer.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.liferay.docs.customer.exception,\
+	com.liferay.docs.customer.model,\
+	com.liferay.docs.customer.service,\
+	com.liferay.docs.customer.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../AAACustomerService-service/service.xml

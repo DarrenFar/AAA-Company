@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.liferay.docs.customer">
+	<namespace>ACS</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <entity name="Customer" local-service="true" uuid="true">
+        <column name="customerId" primary="true" type="long"></column>
+        <column name="customerName" type="String"></column>
+        <column name="customerEmail" type="String"></column>
+        <column name="customerAddress" type="String"></column>
+        <column name="customerContact" type="String"></column>
+        <column name="customerNRIC" type="String"></column>
+        <column name="aaa_start_date" type="Date"></column>
+        <column name="aaa_groupId" type="long"></column>
+        <column name="aaa_companyId" type="long"></column>
+        <column name="aaa_userId" type="long"></column>
+        <column name="aaa_userName" type="String"></column>
+        <column name="aaa_createDate" type="Date"></column>
+        <column name="aaa_modifiedDate" type="Date"></column>
+        <column name="serviceName" type="String"></column>
+        <order>
+            <order-column name="customerId" order-by="asc"></order-column>
+        </order>
+        <finder name="aaa_groupId" return-type="Collection"> 
+			<finder-column name="aaa_groupId"></finder-column> 
+		</finder>
+    </entity>
+    <exceptions>
+        <exception>customerName</exception>
+        <exception>customerEmail</exception>
+        <exception>serviceName</exception>
+    </exceptions>
+</service-builder>

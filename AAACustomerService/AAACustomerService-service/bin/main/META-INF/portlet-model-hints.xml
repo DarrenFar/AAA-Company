@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.docs.customer.model.Customer">
+		<field name="uuid" type="String" />
+		<field name="customerId" type="long" />
+		<field name="customerName" type="String" />
+		<field name="customerEmail" type="String" />
+		<field name="customerAddress" type="String" />
+		<field name="customerContact" type="String" />
+		<field name="customerNRIC" type="String" />
+		<field name="aaa_start_date" type="Date" />
+		<field name="aaa_groupId" type="long" />
+		<field name="aaa_companyId" type="long" />
+		<field name="aaa_userId" type="long" />
+		<field name="aaa_userName" type="String" />
+		<field name="aaa_createDate" type="Date" />
+		<field name="aaa_modifiedDate" type="Date" />
+		<field name="serviceName" type="String" />
+	</model>
+</model-hints>
